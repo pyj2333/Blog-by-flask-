@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" >
+<title>博客主页</title>
+<link type="text/css" rel="stylesheet" href="{{url_for('static',filename = 'css/main.css')}}"/>
+</head>
+<body>
+    <div class = "back"></div>
+    <div class = "top">
+        <h1>猛虎卧丘</h1>
+        <p>Fizz的个人博客</p>
+    </div>
+    <div class="dir">
+        <ul>
+            <li id = "fir" ><a href="#">主页</a></li>
+            <li id = "sec"><a href="#">存档 </a></li>
+            <li id = "thi"><a href="#">关于</a></li>
+        </ul>
+    </div>
+    <br>
+    <hr/>
+    {% for each in essay %}
+    <div class = "essay">
+    <h1>{{each.title}}</h1>
+    <p>{{each.update_time}}</p>
+    <p>作者：Fizz</p>
+    <p>
+        {{each.body}}……
+    </p>
+    <a class="check" target="_blank" href="/flask/Fizz/articles/details/{{each.id}}">查看全文</a>
+    <br>
+    <hr>
+    </div>
+    {% endfor %}
+</body>
+</html>

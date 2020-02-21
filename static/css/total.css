@@ -1,0 +1,96 @@
+div.back{
+    width: 100%;
+    height: 100%;
+    background:#ffffff
+}
+
+div.top{
+    text-align: center;
+}
+
+div.top h1{
+    font-size: 40px;
+    color: #555555;
+    margin-bottom:0px;
+}
+
+div.top p{
+    margin-top:0px;
+    color: #999999;
+    font-size: 20px;
+}
+
+div.dir ul{
+    list-style: none;
+}
+
+div.dir ul li{
+    height: 30px;
+    float:right;
+    border-style: solid;
+    border-color:#9999;
+    border-width: 0.5px;
+    border-bottom: none;
+}
+
+div.dir ul li#fir{
+    position:relative;
+    right:300px;
+     
+}
+
+div.dir ul li#sec{
+    position:absolute;
+    right:200px;
+}
+div.dir ul li#thi{
+    position:absolute;
+    right:100px;
+}
+
+div.dir ul li a{
+    text-decoration: none;
+    padding-bottom: 6px;
+    color:#999999;
+}
+
+div.dir ul li a:hover{
+    background-color:#999999;
+    color: white;
+}
+
+div.year ul li a{
+    text-decoration: none;
+    color:#999999;
+    display:block;
+}
+
+div.year ul h1{
+    color:black;
+    margin: 0px;
+    padding: 0px;
+    font-size:40px;
+}
+
+div#thread{
+    border-left:solid black 0.5px;;
+    height:100%;
+    position: absolute;
+    top:170px;
+    right:30px;
+    height: 100%;
+}
+
+div#thread p{
+    float:left;
+    border:solid 0.5px;
+    margin-right:20px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+div#thread p a{
+    text-decoration: none;
+    color: #999999;
+    display: block;
+}

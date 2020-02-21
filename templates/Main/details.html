@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" >
+<title>博客主页</title>
+    <style>
+div.back{
+    width: 100%;
+    height: 100%;
+    background:#ffffff
+}
+
+div.top{
+    text-align: center;
+}
+
+div.top h1{
+    font-size: 40px;
+    color: #555555;
+    margin-bottom:0px;
+}
+
+div.top p{
+    margin-top:0px;
+    color: #999999;
+    font-size: 20px;
+}
+div.essay{
+    position: static;
+}
+
+div.essay h1{
+    font-size:30px;
+    color:#555555;
+    text-align:center;
+}
+
+div.essay pre{
+    font-size: 20px;
+    color:#999999;
+}
+
+
+    </style>
+</head>
+<body>
+    <div class = "back"></div>
+    <div class = "top">
+        <h1>猛虎卧丘</h1>
+        <p>Fizz的个人博客</p>
+    </div>
+    <hr/>
+    <div class = "essay">
+    <h1>{{essay.title}}</h1>
+    <pre>{{essay.body}}</pre>
+    <br>
+    <hr>
+    </div>
+</body>
+</html>
